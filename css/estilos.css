@@ -1,0 +1,183 @@
+/*Decalrarcion de colores y algunos factores variables para el manejo de la vista*/
+:root{
+  --colorDeFondo: #1b1b1b;
+  --colorDeFuente:#cdcdcd;
+  --colorSecundario:#4e4e4e;
+}
+
+
+
+body{
+  background-color: var(--colorDeFondo);
+  color: var(--colorDeFuente);
+}
+
+.container{
+  width: 98%;
+  box-shadow: 0px 0px 4px 4px #d3d3d3d1;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Estilos para el banner*/
+.bannerIMG {
+    width: 100%;
+    position: static;
+    top: 0px;
+}
+
+h1{
+  margin-left: 1.5%;
+}
+
+.mediaAds {
+  display: flex;
+  width: 94%;
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mediaAds img {
+    width: 250px;
+    height: 250px;
+}
+.mediaAds p{
+    float: right;
+    margin-left: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3; /*Con esto se esta indicando la cantidad de lineas antes del elipsis*/
+    -webkit-box-orient: vertical;
+}
+
+/*Estilos para eL navbar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--colorSecundario);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: var(--colorDeFondo);
+  }
+.buscador{
+  margin-top: 13px;
+  float: right;
+  margin-right: 3%;
+}
+.buscador input{
+  width: 250PX;
+  height: 25px;
+  border-radius: 6px;
+  border: white;
+}
+
+
+.containerProductos{
+  display: flex;
+  overflow-x: scroll;
+  margin-left: auto;
+  margin-right: auto;
+  width: 98%;
+}
+/*Estilo para las tajetas de productos */
+.card{
+  background-color: var(--colorSecundario);
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  width:20%;
+  border: 1px solid lightgray;
+  box-shadow: 0px 0px 4px 4px #d3d3d3d1;
+  border-radius:15px;
+  margin: 2% 2% 0px 0px;
+}
+
+.detalleProducto{
+  transition: all 0.3s ease-out;
+  position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+.detalleProducto img{
+  width: 263px;
+  height: 263px;
+}
+
+.info {
+  background: rgba(27, 26, 26, 0.9);
+  font-family: 'Farsan', cursive;
+  transition: all 0.3s ease-out;
+  transform: translateX(-100%);
+  position: absolute;
+  line-height: 1.9;
+  text-align: left;
+  font-size: 95%;
+  cursor: no-drop;
+  color: #FFF;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.detalleProducto:hover .info{
+  transform: translateX(0);
+}
+
+
+
+.titulo{
+  font-size: 20px;
+  padding: 5px 5px 5px 5px;
+}
+
+.pie{
+  display: flex;
+  background: #004d92;
+  border-radius:0 0 15px 15px;
+  justify-content: space-around;
+}
+.precio{
+  color:#000000;
+}
+.comprar{
+  margin-top: 13px;
+  background: #ffffff;
+  border: none;
+  border-radius: 14px;
+  width: 26%;
+  height: 38px;
+}
+
+.comprar:hover{
+  background-color: #cdcdcd;
+  cursor: pointer;
+}
+
+.contactos{
+  margin-top:5%;
+  width:98%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*ESTILOS PARA PINTAR Y DESPINTAR ESTRELLAS DE VALORACIONES*/
+.estrellaMarcada{
+  color:gold;
+}
+.estrellaSinMarcar{
+  color: #000000;
+}
